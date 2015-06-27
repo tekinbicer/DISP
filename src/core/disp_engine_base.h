@@ -54,7 +54,7 @@ class DISPEngineBase{
         DISPCommBase<DT> *comm,
         AReductionSpaceBase<RST, DT> *conf_reduction_space, 
         int num_reduction_threads);
-    ~DISPEngineBase();
+    virtual ~DISPEngineBase();
 
     virtual void RunParallelReduction(ADataRegion<DT> &input_data, int 
         req_units)=0;
