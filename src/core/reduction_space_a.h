@@ -32,7 +32,7 @@ class AReductionSpaceBase{
 
     // Derived class can use this function to perform
     // deep copies
-    virtual void CopyTo(CT &target) {};
+    virtual void CopyTo(CT &target)=0;
 
     virtual CT *Clone(){
       if(reduction_objects_ == nullptr)
