@@ -160,11 +160,11 @@ class DISPEngineReduction : public DISPEngineBase<RST, DT>{
         target_spaces = std::move(temp_target_spaces);
         temp_target_spaces.clear();
       }while(target_spaces.size()>1);
-    };
+    }
 
     virtual void ParInPlaceLocalSynchWrapper(){
       ParInPlaceLocalSynch(this->reduction_spaces_, 2, this->num_reduction_threads_);
-    };
+    }
 
     virtual void RunParallelReduction(ADataRegion<DT> &input_data, int req_units)
     {
