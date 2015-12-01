@@ -12,6 +12,7 @@
 
 #include <iostream>
 #include <vector>
+#include <stdexcept>
 #include "mirrored_region_bare_base.h"
 
 template <typename T> 
