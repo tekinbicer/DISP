@@ -96,7 +96,8 @@ int DISPEngineBase<RST, DT>::NumProcessors(){
   //num_procs = sysconf(_SC_NPROCESSORS_ONLN);
 
   if(num_procs<1)
-    throw std::length_error("Number of available processors is <1!");
+    //throw std::length_error("Number of available processors is <1!");
+    std::cout << "Unable to detect number of available processors" << std::endl;
 
   return num_procs;
 }
